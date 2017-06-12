@@ -17,7 +17,9 @@ Add this to your `.pre-commit-config.yaml`:
         sha: ''  # Use the sha or tag you want to point at
         hooks:
         -   id: prettier
-            args: [] #list of args like '--single-quote', '--jsx-bracket-same-line', '--print-width 120', '--no-bracket-spacing'
+            args: ['--write', '--single-quote'] 
+            # list of args like '--single-quote', '--jsx-bracket-same-line', '--print-width 120', '--no-bracket-spacing'. 
+            # If you specify an args array, it must include '--write'.
             additional_dependencies: ['prettier@1.1.0']
  ```          
   ### FAQ's
